@@ -1,0 +1,13 @@
+[Unit]
+Description=proxy tunnel based on tun2socks gateway
+After=network.target
+
+[Service]
+User=root
+EnvironmentFile=/etc/proxy-tunnel/environment.sh
+ExecStart=/usr/sbin/tun2socks -device tun://gatewaytun -proxy ${PROXY}
+ExecStartPost=/usr/bin/sh /etc/proxy-tunnel/exec-after.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+# черновик, не разобрался как это довести до ума
+network:
+  version: 2
+  vlans:
+    gatewaytun:
+      addresses:
+        - 127.254.254.1/32
+      gateway4: 127.254.254.1
+      dhcp6: no
+      dhcp4: no
+      nameservers:
+        addresses:
+          #- 127.254.254.1
+          -  10.230.192.78
+          -  10.230.192.77
