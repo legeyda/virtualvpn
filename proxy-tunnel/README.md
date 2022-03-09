@@ -4,4 +4,4 @@
 
 3.	edit config files in `/etc/tun2socks`
 
-4.	`sudo systemctl start tun2socks
+4.	`sudo systemctl start tun2socks`
