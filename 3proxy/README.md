@@ -11,4 +11,4 @@
 
 	-	файл `run.cmd` - скрипт просто запускает `bin\3proxy.exe` с параметром `cfg\simple.cfg`
 
-	
+4.	Запустить `run.cmd`
